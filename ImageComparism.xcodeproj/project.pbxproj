@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25F9B582206A128500C59AFC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F9B581206A128500C59AFC /* main.cpp */; };
+		25F9B589206A1FF400C59AFC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F9B588206A1FF400C59AFC /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		25F9B57E206A128500C59AFC /* ImageComparism */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ImageComparism; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F9B581206A128500C59AFC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25F9B588206A1FF400C59AFC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F9B589206A1FF400C59AFC /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				25F9B580206A128500C59AFC /* ImageComparism */,
 				25F9B57F206A128500C59AFC /* Products */,
+				25F9B588206A1FF400C59AFC /* opencv2.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +238,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N288ZWQQZJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +251,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N288ZWQQZJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
